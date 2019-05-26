@@ -36,3 +36,32 @@ h3 {
   padding-top: 5px;
   color: white;
 }
+
+#whatsapp,
+#facebook,
+#github,
+#linkedin {
+    width: 35px;
+    height: 35px;
+    padding: 3px;
+    color: white;
+    margin-top: 5px;
+    border-radius: 20%;
+}
+
+#whatsapp:hover {
+    background-color: green;
+}
+
+#facebook:hover {
+    background-color: #3B5998;
+}
+
+#linkedin:hover {
+    background-color: darkblue;
+}
+
+#github:hover {
+    background-color: white;
+    color: black;
+}

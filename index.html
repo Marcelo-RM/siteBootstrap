@@ -3,7 +3,14 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="bootstrap/bootstrap.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript">
+    function share(event) {
+    	var site = encodeURI(event.getAttribute('href'));
+    	window.open(site);
+    }
+  </script>
   <title>Minha Página</title>
 </head>
 <body>
@@ -76,6 +83,12 @@
   </section>
   <footer class="container-fluid text-center bg-footer">
     <p>Desenvolvido por "Marcelo Montalvão"</p>
+    <div class="container-fluid text-center" id="links">
+      <img onclick="share(this)" id="facebook" href="https://www.facebook.com/people/Marcelo-Rodrigues/100004629636017" class="fab fa-facebook-f">
+      <img onclick="share(this)" id="github" href="https://github.com/Marcelo-RM" class="fab fa-github">
+      <img onclick="share(this)" id="linkedin" href="https://www.linkedin.com/in/marcelo-rodrigues-76046717b/" class=" fab fa-linkedin-in">
+      <img onclick="share(this)" id="whatsapp" href="https://wa.me/5561998657241/?text='Hi, I saw your site'" class="fab fa-whatsapp">
+    </div>
   </footer>
 </body>
 </html>
